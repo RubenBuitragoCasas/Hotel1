@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body style="background-color: lightblue;">
+<h1>Haga su Reserva</h1>
+<form action="procesareserva.php" method="post">
+<p>
+<fieldset>
+    <legend>Datos Personales</legend>
+<label for="nombre">Nombre:</label>
+<input id="nombre" type="text" name="nombre" required maxlength="100" autofocus>
+</p>
+<p>
+<label for="apellido">Apellidos:</label>
+<input id="apellido" type="text" name="apellido" required maxlength="100">
+</p>
+<p>
+<label for="DNI">DNI:</label>
+<input id="DNI" type="text" name="DNI" required maxlength="10" placeholder="DNI con letra">
+</fieldset>
+</p>
+<p>
+<fieldset>
+<legend>Datos de Estancia</legend>
+Habitacion:
+<p>
+<label for="Indi">Individual</label>
+<input id="indi" type="radio" name="Habitacion">
+<label for="Doble">Doble</label>
+<input for="Doble" type="radio" name="Habitacion">
+<label for="tri">Triple</label>
+<input id="tri" type="radio" name="Habitacion">
+</p>
+<p>
+<label for="per">Personas:</label>
+<select name="per" id="per">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+</p>
+<p>
+<label for="mas">Llevo mascotas:</label>
+<input type="checkbox" name="mas" id="mas">
+</p>
+<p>
+<label for="fe">Fecha de Llegada:</label>
+<input type="date" name="fe" id="fe">
+</p>
+<p>
+<label for="hora">Hora de Llegada:</label>
+<input type="time" name="hora" id="hora">
+</fieldset>
+</p>
+<p>
+<input type="submit" value="Enviar">
+<input type="reset" value="Reiniciar">
+<a href="index.html">Volver</a>
+</p>
+</form>
+</body>
+</html>
